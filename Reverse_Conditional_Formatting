@@ -1,0 +1,18 @@
+Function CheckColor1(range)
+    
+    If range.Interior.Color = RGB(256, 0, 0) Then
+        CheckColor1 = "Red"
+    ElseIf range.Interior.Color = RGB(0, 256, 0) Then
+        CheckColor1 = "Green"
+    ElseIf range.Interior.Color = RGB(223, 151, 0) Then
+        CheckColor1 = "Orange"
+    ElseIf range.Interior.Color = RGB(0, 176, 80) Then
+        CheckColor1 = "Green"
+    ElseIf range.Interior.Color = RGB(215, 170, 227) Then
+        CheckColor1 = "Purple"
+    ElseIf range.Interior.Color = RGB(255, 255, 255) Then
+        CheckColor1 = "White"
+    Else
+        CheckColor1 = range.Interior.Color
+    End If
+End Function
